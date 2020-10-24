@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.lynden.gmapsfx.GoogleMapView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="350.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AnnArtisanMapController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="-1.0" prefHeight="356.0" prefWidth="695.0">
+         <children>
+            <AnchorPane id="AnchorPane" layoutY="-2.0" prefHeight="359.0" prefWidth="705.0" style="-fx-background-color: #03224C;">
+               <children>
+                  <TableView fx:id="table" layoutX="1.0" layoutY="28.0" prefHeight="332.0" prefWidth="231.0">
+                     <columns>
+                        <TableColumn fx:id="NomAnnonce" prefWidth="107.0" text="Nom Annonce" />
+                        <TableColumn fx:id="type" minWidth="0.0" prefWidth="122.0" text="Type Annonce" />
+                     </columns>
+                     <columnResizePolicy>
+                     </columnResizePolicy>
+                  </TableView>
+                  <AnchorPane fx:id="mapGoogle" layoutX="248.0" layoutY="45.0" prefHeight="219.0" prefWidth="565.0">
+                     <children>
+                        <GoogleMapView fx:id="gmap" layoutY="1.0" prefHeight="292.0" prefWidth="565.0" />
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="AdresseTxt" layoutX="334.0" layoutY="277.0" prefHeight="35.0" prefWidth="363.0" text="Label" textFill="WHITE" visible="false">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="seach" layoutX="250.0" layoutY="5.0" prefHeight="25.0" prefWidth="91.0" promptText="Recherche" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

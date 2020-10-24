@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../../style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeCController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="-3.0" prefHeight="410.0" prefWidth="622.0">
+         <children>
+            <AnchorPane layoutY="-1.0" prefHeight="46.0" prefWidth="606.0">
+               <children>
+                  <ImageView fitHeight="492.0" fitWidth="622.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Pictures/purple-gradient-blue-linear-2560x1440-c2-87cefa-da70d6-a-195-f-14.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="Home" layoutX="39.0" layoutY="11.0" mnemonicParsing="false" onAction="#Home" text="Home" textFill="WHITE" />
+                  <Button fx:id="Produits" layoutX="119.0" layoutY="11.0" mnemonicParsing="false" onAction="#Produits" text="user" textFill="WHITE" />
+                  <Button fx:id="Annonces" layoutX="189.0" layoutY="11.0" mnemonicParsing="false" onAction="#Annonces" text="Annonces" textFill="#fffafa" />
+                  <Button fx:id="Evénements" layoutX="288.0" layoutY="11.0" mnemonicParsing="false" onAction="#Event" text="partenaires" textFill="WHITE" />
+                  <Button fx:id="Restaurants" layoutX="392.0" layoutY="11.0" mnemonicParsing="false" onAction="#Resto" text="reclamation" textFill="WHITE" />
+                  <Button fx:id="SAV" layoutX="509.0" layoutY="11.0" mnemonicParsing="false" onAction="#Sav" text="aide" textFill="WHITE" />
+                  <ImageView fitHeight="295.0" fitWidth="481.0" layoutX="90.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Pictures/home-improvement.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="75.0" fitWidth="183.0" layoutX="17.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0">
+                     <image>
+                        <Image url="@../../../../../Pictures/fixit_logo-2-300x131.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="Deconnexion" layoutX="489.0" layoutY="365.0" mnemonicParsing="false" onAction="#Deconnexion" text="Déconnexion" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

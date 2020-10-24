@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AnnonceDétailController">
+   <children>
+      <AnchorPane layoutX="34.0" layoutY="-1.0" prefHeight="400.0" prefWidth="527.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="58.0" layoutY="54.0" text="Nom Service" />
+            <Label layoutX="58.0" layoutY="85.0" text="Type :" />
+            <Label layoutX="60.0" layoutY="117.0" text="Prix :" />
+            <Label layoutX="60.0" layoutY="153.0" text="Description :" />
+            <Label fx:id="nom" layoutX="203.0" layoutY="54.0" prefHeight="17.0" prefWidth="280.0" text=" " />
+            <Label fx:id="type" layoutX="203.0" layoutY="85.0" prefHeight="17.0" prefWidth="262.0" text=" " />
+            <Label fx:id="prix" layoutX="203.0" layoutY="117.0" prefHeight="17.0" prefWidth="145.0" text=" " />
+            <Label fx:id="desc" layoutX="140.0" layoutY="153.0" prefHeight="53.0" prefWidth="382.0" text=" " />
+            <ImageView fx:id="imgV" fitHeight="150.0" fitWidth="200.0" layoutX="276.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="12.0" layoutY="219.0" text="Avis:" />
+            <ComboBox fx:id="combo" layoutX="17.0" layoutY="245.0" prefHeight="25.0" prefWidth="115.0" promptText="Select Avis" />
+            <Hyperlink fx:id="EvalBtn" layoutX="30.0" layoutY="282.0" onAction="#Evaluer" style="-fx-background-color: #03324c;" text="Donner Avis" textFill="#f5f5f5" />
+            <TextField fx:id="commentText" layoutX="211.0" layoutY="245.0" promptText="commenter" />
+            <Button fx:id="CommentBtn" layoutX="365.0" layoutY="245.0" mnemonicParsing="false" onAction="#commenter" style="-fx-background-color: #03324c;" text="Commenter" textFill="WHITE" />
+            <TableView fx:id="tableCom" layoutX="142.0" layoutY="282.0" prefHeight="137.0" prefWidth="496.0">
+               <columns>
+                  <TableColumn fx:id="commentaire" editable="false" prefWidth="304.0" sortType="DESCENDING" sortable="false" text="commentaire" />
+                  <TableColumn fx:id="date" prefWidth="191.0" text="Date" />
+               </columns>
+            </TableView>
+            <Label layoutX="217.0" layoutY="218.0" text="Commentaire :" />
+            <Button fx:id="SuppComBtn" layoutX="453.0" layoutY="245.0" mnemonicParsing="false" onAction="#SupprimerCommentaire" style="-fx-background-color: #03324c;" text="Supprimer" textFill="WHITE" />
+            <Button fx:id="lire" layoutX="534.0" layoutY="167.0" mnemonicParsing="false" onAction="#read" text="lire" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="194.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CommentAnnonceController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="-1.0" layoutY="-2.0" prefHeight="398.0" prefWidth="600.0" style="-fx-background-color: #03224c;">
+         <children>
+            <AnchorPane layoutX="31.0" layoutY="-6.0" prefHeight="202.0" prefWidth="540.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <Button fx:id="CommentBtn" layoutX="156.0" layoutY="155.0" mnemonicParsing="false" onAction="#Commenter" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #03224c;" text="Commenter" textFill="WHITE" />
+                  <Button fx:id="AnnulerBtn" layoutX="264.0" layoutY="155.0" mnemonicParsing="false" onAction="#Annuler" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #03224c;" text="Annuler" textFill="WHITE" />
+                  <Label layoutX="148.0" layoutY="27.0" text="Commentaire:" />
+                  <TextArea fx:id="text" layoutX="164.0" layoutY="46.0" prefHeight="86.0" prefWidth="183.0" />
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tableCom" layoutX="31.0" layoutY="195.0" prefHeight="200.0" prefWidth="540.0">
+              <columns>
+                <TableColumn fx:id="tCom" prefWidth="407.0" text="Commentaire" />
+                <TableColumn fx:id="tDate" minWidth="0.0" prefWidth="131.0" text="Date" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

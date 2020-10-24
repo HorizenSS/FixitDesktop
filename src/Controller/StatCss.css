@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 mars 2018, 12:08:38
+    Author     : Win10
+*/
+
+.chart{
+    -fx-clockwise: false;
+    -fx-pie-label-visible: false;
+    -fx-label-line-length: 2;
+    -fx-start-angle: 30;
+    -fx-legend-side: right;
+}
+.chart-pie-label{
+    -fx-font-size:10px;
+}
+.chart-content{
+    -fx-padding: 2;
+}
+.default-color0.chart-pie{
+    -fx-pie-color:yellow;
+}
+.chart-legend{
+    -fx-background-color: white;
+    -fx-border-width: 2;
+}
